@@ -11,12 +11,13 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
-/* ===== config ===== */
+/* ===== CONFIG ===== */
+// DATABASE
 var db = require('./config/db');
 // connect to mongoDB database. Change /config/db.js url to what we need
-// mongoose.connect(db.url);
+mongoose.connect(db.url);
 
-// port for the app
+// PORT for the app
 var port = process.env.PORT || 8080;
 
 // get the data by (POST) parameters
@@ -31,7 +32,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set static files location. example /public/img will be /img for users
 app.use(express.static(__dirname + '/public'));
 
-/* ===== routes ===== */
+/* ===== ROUTES ===== */
 // set the routes file. config the routes
 require('./app/routes')(app);
 
