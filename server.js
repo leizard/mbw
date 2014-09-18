@@ -1,17 +1,17 @@
-/* ===== server.js ===== */
+//////// server.js ////////
 // the 'main' file,
 // consisting the modules declarations, configs
 // databases, express settings, routes,
 // start the server
 
-/* ===== modules ===== */
+//////// modules ////////
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
-/* ===== CONFIG ===== */
+//////// CONFIG ////////
 // DATABASE
 var db = require('./config/db');
 // connect to mongoDB database. Change /config/db.js url to what we need
@@ -32,11 +32,11 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set static files location. example /public/img will be /img for users
 app.use(express.static(__dirname + '/public'));
 
-/* ===== ROUTES ===== */
+//////// ROUTES ////////
 // set the routes file. config the routes
 require('./app/routes')(app);
 
-/* ===== set up the app ===== */
+//////// set up the app ////////
 app.listen(port);
 console.log("Port " + port + " is listening...");
 exports = module.exports = app;
