@@ -17,3 +17,7 @@ pic
   likes,
   downloaded
 }
+
+TODO
+- create some 'pics' that has only the tags text in mbw/data/db
+- display only the name in home page
