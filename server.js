@@ -17,6 +17,9 @@ var db = require('./config/db');
 // connect to mongoDB database. Change /config/db.js url to what we need
 mongoose.connect(db.url);
 
+// WALLPAPER - sample mongoose model
+var Wallpaper = require('./app/models/wallpaper.js');
+
 // PORT for the app
 var port = process.env.PORT || 8080;
 
@@ -34,7 +37,7 @@ app.use(express.static(__dirname + '/public'));
 
 //////// ROUTES ////////
 // set the routes file. config the routes
-require('./app/routes')(app);
+require('./app/routes')(express, app);
 
 //////// set up the app ////////
 app.listen(port);

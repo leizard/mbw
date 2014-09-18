@@ -1,3 +1,5 @@
+// Sample service page
+
 angular.module('NerdService',[]).factory('Nerd', ['$http', function ($http) {
   return {
     // get all nerds
@@ -15,4 +17,4 @@ angular.module('NerdService',[]).factory('Nerd', ['$http', function ($http) {
       return $http.delete('/api/nerds' + id);
     }
   }
-}])
+}]);

@@ -2,4 +2,4 @@
 // use dependency injection and setup the Angular application
 
 // sampleApp is in index.html
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService']);
+angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'AboutCtrl']);
