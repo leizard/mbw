@@ -27,19 +27,23 @@
 <body ng-app="mbwApp" ng-controller="MainController">
     <div class="container">
         <!-- HEADER pictures categories -->
-        <nav class="navbar navbar-default">
+        <nav class="{{active}}" ng-click="$event.preventDefault()">
+            <a href="#" class="urban" ng-click="active='urban'">Urban</a>
+            <a href="#" class="cyberpunk" ng-click="active='cyberpunk'">Cyberpunk</a>
+            <a href="#" class="gaming" ng-click="active='gaming'">Gaming</a>
+            <a href="#" class="nature" ng-click="active='nature'">Nature</a>
+            <a href="#" class="space" ng-click="active='space'">Space</a>
+            <!--
             <div class="navbar-header">
                 <a class="navbar-brand" href="">Nature</a>
             </div>
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">Space</a>
-            </div>
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">More Categories TODO use ng-repeat?</a>
-            </div>
-        </nav>
+            -->
+        </nav><br>
+        
+        <!--<p ng-hide="active"></p>
+        <p ng-show="active"></p>-->
 
-        <!-- HEADER hot, best, new -->
+        <!-- HEADER new, best -->
         <nav class="navbar navbar-inverse">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/new">New</a>
