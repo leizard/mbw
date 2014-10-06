@@ -1,15 +1,21 @@
 // here defined the Angular routes
 angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-  $routeProvider
+    $routeProvider
     // risky layout incoming ...
     .when('/', {
-      templateUrl: 'views/home.html',
-      controller: 'MainController'
+        templateUrl: 'views/home.html',
+        controller: 'MainController'
     })
-    .when('/about', {
-      templateUrl: 'views/about.html',
-      controller: 'AboutController'
+
+    .when('/new', {
+        templateUrl: 'views/home.html',
+        controller: 'MainController'
+    })
+
+    .when('/best', {
+        templateUrl: 'views/best.html',
+        controller: 'BestController'
     });
 
-  $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 }]);

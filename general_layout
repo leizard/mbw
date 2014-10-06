@@ -1,13 +1,13 @@
 /mbw:
-navbar: about, best, category
+navbar: best, category
 - pics - pics - pics -
 - pics - pics - pics -
 ..
-/mbw/pic/pic-name -> pic with 'pic-name', can like or dl
-/mbw/best -> most 'like' or download pics
-/mbw/res/9:16 -> pics with 9:16 reso
-/mbw/about -> stuff
-/mbw/tag/sports -> pics with 'sport' tag
+mbw/pic/pic-name -> pic with 'pic-name', can like or dl
+mbw/best -> most 'like' or download pics
+
+mbw/{{tag}}/best or new
+eg: /nature/best returns the highest vote ups of pics with nature tag
 
 pic
 {
