@@ -27,7 +27,7 @@
 <body ng-app="mbwApp" ng-controller="MainController">
     <div class="container">
         <!-- HEADER pictures categories -->
-        <nav class="{{active}}" ng-click="$event.preventDefault()">
+        <nav id="categories" class="{{active}}" ng-click="$event.preventDefault()">
             <a href="#" class="urban" ng-click="active='urban'">Urban</a>
             <a href="#" class="cyberpunk" ng-click="active='cyberpunk'">Cyberpunk</a>
             <a href="#" class="gaming" ng-click="active='gaming'">Gaming</a>
@@ -44,11 +44,15 @@
         <p ng-show="active"></p>-->
 
         <!-- HEADER new, best -->
-        <nav class="navbar navbar-inverse">
+        <nav id="sorting" class="{{sort}}">
+            <a href="/new" class="new" ng-click="sort='new'">New</a>
+            <a href="/best" class="best" ng-click="sort='best'">Best</a>
+            <!--
             <div class="navbar-header">
                 <a class="navbar-brand" href="/new">New</a>
                 <a class="navbar-brand" href="/best">Best</a>
             </div>
+            -->
         </nav>
 
         <!-- Angular Dynamic contents -->
