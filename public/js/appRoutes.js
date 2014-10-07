@@ -3,18 +3,18 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
     // risky layout incoming ...
     .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'MainController'
+        templateUrl: 'views/new.html',
+        controller: 'SortNewController'
     })
 
     .when('/new', {
-        templateUrl: 'views/home.html',
-        controller: 'MainController'
+        templateUrl: 'views/new.html',
+        controller: 'SortNewController'
     })
 
     .when('/best', {
         templateUrl: 'views/best.html',
-        controller: 'BestController'
+        controller: 'SortBestController'
     });
 
     $locationProvider.html5Mode(true);

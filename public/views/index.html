@@ -13,20 +13,20 @@
     <!--JS-->
     <script src="libs/angular/angular.js"></script>
     <script src="libs/angular-route/angular-route.js"></script>
-    <script src="libs/angular-wurfl-image-tailor/src/angular-wurfl-image-tailor.js"></script>
 
+    <!-- Include the controllers and services -->
+    <script src="js/controllers/SortNewCtrl.js"></script>
+    <script src="js/controllers/SortBestCtrl.js"></script>
+    <script src="js/services/InstagramService.js"></script>
 
-    <!-- Include the controllers -->
-    <script src="js/controllers/MainCtrl.js"></script>
-    <script src="js/controllers/BestCtrl.js"></script>
-   
     <!--required stuff-->
     <script src="js/appRoutes.js"></script>
     <script src="js/app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
 
 </head>
 
-<body ng-app="mbwApp" ng-controller="MainController">
+<body ng-app="mbwApp" ng-controller="SortNewController">
     <div class="container">
         <!-- HEADER pictures categories -->
         <nav id="categories" class="{{active}}" ng-click="$event.preventDefault()">
