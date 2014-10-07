@@ -13,7 +13,7 @@ section, footer, header, aside, nav{
     display: block;
 }
 
-/* Menu */
+/* --------- Menu --------- */
 nav{
     display: inline-block;
     margin: 10px auto 15px;
@@ -62,7 +62,7 @@ nav.best .best{
     background-color: #e35885;
 }
 
-/* Grid layout */
+/* --------- Grid layout --------- */
 ul.grid{
     list-style: none;
     width: 650px;
@@ -80,4 +80,11 @@ ul.grid li img{
     height: 180px;
     display: block;
     border:none;
+}
+
+/* --------- Img resize --------- */
+img{
+    max-width:100%;
+    width:320px;
+    height:auto;
 }
