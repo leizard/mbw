@@ -1,0 +1,38 @@
+/mbw:
+navbar: best, category
+- pics - pics - pics -
+- pics - pics - pics -
+..
+mbw/pic/pic-name -> pic with 'pic-name', can like or dl
+mbw/best -> most 'like' or download pics
+
+mbw/{{tag}}/best or new
+eg: /nature/best returns the highest vote ups of pics with nature tag
+
+NOTE: imgur layout:
+- upload button on top
+- thumbnails 5 per row
+- up/down votes
+- click on thumbnail to bring it to non-cropped resized img
+- click again to bring it to full res
+- comment system
+
+OUR layout:
+- upload button
+- one per row
+- upvotes only
+- click to bring it to fullscreen
+
+
+pic
+{
+  name,
+  res,
+  tags,
+  likes,
+  downloaded
+}
+
+TODO
+- create some 'pics' that has only the tags text in mbw/data/db
+- display only the name in home page
