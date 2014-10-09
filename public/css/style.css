@@ -65,7 +65,7 @@ nav.best .best{
 /* --------- Grid layout --------- */
 ul.grid{
     list-style: none;
-    width: 650px;
+    width: 1140px;
     margin: 0 auto;
     text-align: left;
 }
@@ -76,8 +76,8 @@ ul.grid li{
 }
 
 ul.grid li img{
-    width: 320px;
-    height: auto;
+    width: 280px;
+    height: 280px;
     display: block;
     border:none;
 }
